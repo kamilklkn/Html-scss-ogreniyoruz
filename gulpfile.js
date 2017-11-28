@@ -1,0 +1,1 @@
+var gulp = require(gulp); // node modules içerisindeki gulp modülünü çağırıp gulp değişkenine aktarıyoruz.

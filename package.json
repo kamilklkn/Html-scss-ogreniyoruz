@@ -1,0 +1,29 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "Adem abi sağolsun css öğrenicez :)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "Çalış tı :)",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kamilklkn/html-css-ogreniyoruz.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "ai"
+  ],
+  "author": "Kamil Kalkan - Kamilklkn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilklkn/html-css-ogreniyoruz/issues"
+  },
+  "homepage": "https://github.com/kamilklkn/html-css-ogreniyoruz#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.0.0"
+  }
+}
