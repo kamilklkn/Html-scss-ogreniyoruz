@@ -16,7 +16,15 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("./scss/*.scss", ['sass']);
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
-
+gulp.task('sass', () => {
+        return gulp.src('./scss/main.scss')
+            .pipe(plumber([{ errorHandler: false }]))
+            .pipe(sass())
+            .pipe(prefix())
+            .pipe(gulp.dest('./'))
+            .pipe(browserSync.stream())
+    })
+    /*
 gulp.task('sass', function() {
     return gulp.src("./scss/*.scss")
         .pipe(sass())
@@ -24,5 +32,5 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-
+*/
 gulp.task('default', ['serve']);
