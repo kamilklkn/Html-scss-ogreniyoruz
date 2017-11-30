@@ -28,20 +28,20 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("./scss/*.scss", ['sass']);
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
-gulp.task('sass',['clean-css'], () => {
-        return gulp.src('./scss/main.scss')
-            .pipe(plumber([{ errorHandler: false }]))
-            .pipe(sass())
-            .pipe(prefix())
-            .pipe(header(banner, { pkg: pkg }))
-            .pipe(gulp.dest('./'))
-            .pipe(browserSync.stream())
-    })
+gulp.task('sass', ['clean-css'], () => {
+    return gulp.src('./scss/main.scss')
+        .pipe(plumber([{ errorHandler: false }]))
+        .pipe(sass())
+        .pipe(prefix())
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(gulp.dest('./'))
+        .pipe(browserSync.stream())
+})
 
 gulp.task('clean-css', function() {
-    fs.writeFile('./style.css', '');
+    fs.writeFile('./main.css', '');
 });
-    /*
+/*
 gulp.task('sass', function() {
     return gulp.src("./scss/*.scss")
         .pipe(sass())
