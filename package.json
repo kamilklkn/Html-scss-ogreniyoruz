@@ -16,8 +16,12 @@
     "html",
     "ai"
   ],
-  "author": "Kamil Kalkan - Kamilklkn",
-  "license": "ISC",
+  "author": {
+    "name": "Kamil Kalkan",
+    "email": "kamilklkn@gmail.com",
+    "web": "http://kamilklkn.com/"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kamilklkn/html-css-ogreniyoruz/issues"
   },
@@ -26,6 +30,7 @@
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-header": "^1.8.9",
     "gulp-imagemin": "^4.0.0",
     "gulp-nodemon": "^2.2.1",
     "gulp-plumber": "^1.1.0",
