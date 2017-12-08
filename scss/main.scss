@@ -1,5 +1,6 @@
-@import "veriable";
-@import "global";
-@import "header";
-@import "normalize";
-@import "formalize";
+@import "config/veriable";
+@import "config/mixin";
+@import "helper/global";
+@import "global/header";
+@import "helper/normalize";
+@import "helper/formalize";

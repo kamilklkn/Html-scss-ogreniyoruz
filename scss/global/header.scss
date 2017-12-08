@@ -5,6 +5,12 @@
         align-items: center;
         height: 64px;
     }
+    &-switch{
+      @include mq("tablet"){
+        display: none;
+      }
+
+    }
     &-menu {
         margin-left: auto;
         display: flex;

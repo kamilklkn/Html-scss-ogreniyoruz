@@ -1,3 +1,10 @@
+/*
+ Theme Name: css
+ Version: 1.0.0
+ Author: Kamil Kalkan
+ Author URI: http://kamilklkn.com/
+ License: MIT 
+*/
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -42,6 +49,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 64px; }
+  @media (min-width: 768px) {
+    .Header-switch {
+      display: none; } }
   .Header-menu {
     margin-left: auto;
     display: -webkit-box;
