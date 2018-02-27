@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Scss Öğreniyorum</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="main.css">
@@ -21,17 +21,17 @@
 </svg>
 
     <!--Begin Header-->
-    <header class="Header">
+    <header class="Header ">
         <div class="container">
             <a class="Header-logo" href="">
                 <img src="img/site-logo.png" alt="">
             </a>
 
             <button class="Header-switch" type="button">
-                <svg class="icon icon-menu">
-                    <use xlink:href="#icon-menu"></use>
-                </svg>
-            </button>
+            <svg class="icon icon-menu">
+                <use xlink:href="#icon-menu"></use>
+            </svg>
+        </button>
 
             <div class="Header-menu">
                 <div class="Header-menu-user">
@@ -39,20 +39,29 @@
                     <a href="">Sign In</a>
                 </div>
 
-                <a class="button" href="">List yousr propersty</a>
+                <a class="Header-menu-property button button-blue" href="">List yousr propersty</a>
                 <div class="Header-menu-helper">
                     <select>
-                        <option value="en">En</option>
-                    </select>
+                    <option value="en">En</option>
+                </select>
                     <select>
-                        <option value="en">UAH</option>
-                    </select>
+                    <option value="en">UAH</option>
+                </select>
                 </div>
-
             </div>
 
         </div>
     </header>
+    <nav class="navigation">
+        <div class="container">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+        </div>
+    </nav>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
     <script id="__bs_script__">
         //<![CDATA[
         document.write("<script async src='http://HOST:3024/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));

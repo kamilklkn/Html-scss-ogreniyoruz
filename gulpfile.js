@@ -22,10 +22,12 @@ var banner = ['/*',
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
+	  notify: false,
         server: "./"
     });
 
     gulp.watch("./scss/**/*.scss", ['sass']);
+    gulp.watch("./js/*.js").on('change', browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
 gulp.task('sass', ['clean-css'], () => {
