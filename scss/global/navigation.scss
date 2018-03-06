@@ -1,0 +1,14 @@
+.Navigation {
+    background-color: $color-soft-blue;
+    height: 50px;
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        //overflow-x: scroll;
+    }
+    &-item {
+        margin-left: 10px;
+        font-size: $font-size-smoll;
+    }
+}

@@ -1,5 +1,4 @@
 .Header {
-    border-bottom: 1px solid blue;
     .container {
         position: relative;
         display: flex;
@@ -15,6 +14,7 @@
         }
     }
     &-menu {
+        pointer-events: none;
         display: none;
         position: absolute;
         left: 0;
@@ -32,6 +32,7 @@
             transform: translateY(0);
         }
         @include mq ("tablet") {
+            pointer-events: auto;
             display: flex;
             opacity: 1;
             transform: translateX(0);
@@ -76,6 +77,7 @@
         &-helper {
             display: flex;
             justify-content: center;
+            margin-top: 10px;
             @include mq ("tablet") {
                 margin-left: 20px;
                 margin-top: 0;
